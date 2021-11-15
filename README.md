@@ -64,3 +64,13 @@ cd models
 mv ~/Downloads/UR3_single_cube_model.tar .  
 
 catkin_make  
+
+# ========= Git LFS
+## one
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+
+## in every repo
+git lfs install
+git lfs track "*.tar"
+git add .gitattributes
